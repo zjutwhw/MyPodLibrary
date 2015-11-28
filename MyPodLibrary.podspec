@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'MyPodLibrary'
-  spec.version      = "0.1.4"
+  spec.version      = "0.1.5"
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/zjutwhw/MyPodLibrary'
   spec.authors      = { "zjutwhw" => "zjutwhw@gmail.com" }
@@ -10,10 +10,9 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Pod/Classes/**/*.{h,m}'
   spec.requires_arc = true
 
-  spec.subspec 'ShareNote' do |shareNote|
-    shareNote.source_files   = 'ShareNote/**/*.{h,m}'
-    shareNote.dependency 'AFNetworking'
-    shareNote.dependency 'TTTAttributedLabel'
+  spec.subspec 'Extension' do |extension|
+    extension.source_files   = 'Extension/**/*.{h,m}'
+    extension.dependency 'AFNetworking'
   end
   
   spec.frameworks = 'UIKit'
