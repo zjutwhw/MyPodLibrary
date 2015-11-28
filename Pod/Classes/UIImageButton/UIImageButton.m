@@ -18,14 +18,14 @@
 
     //Up image
     CGPoint imageCenter = self.imageView.center;
-    imageCenter.x = self.width/2;
-    imageCenter.y = self.height/2 - 2 - imageSize.height/2;
+    imageCenter.x = self.frame.size.width/2;
+    imageCenter.y = self.frame.size.height/2 - 2 - imageSize.height/2;
     self.imageView.center = imageCenter;
     
     //Down title
     CGRect labelFrame = [self titleLabel].frame;
     labelFrame.origin.x = 0;
-    labelFrame.origin.y = self.height/2 + 2;
+    labelFrame.origin.y = self.frame.size.height/2 + 2;
     labelFrame.size.width = self.frame.size.width;
     
     self.titleLabel.frame = labelFrame;
