@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "MyPodLibrary"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MyPodLibrary."
+  s.summary          = "MyPodLibrary is beatiful lib."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                       DESC
+                       Testing MyPodLibrary Podspec.
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MyPodLibrary"
+                      DESC
+
+  s.homepage         = "https://github.com/zjutwhw/MyPodLibrary"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "qinfei" => "qinfei@mogujie.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MyPodLibrary.git", :tag => s.version.to_s }
+  s.author           = { "zjutwhw" => "zjutwhw@gmail.com" }
+  s.source           = { :git => "https://github.com/zjutwhw/MyPodLibrary.git", :tag => "0.1.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -34,7 +36,7 @@ Pod::Spec.new do |s|
     'MyPodLibrary' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.3'
 end
